@@ -1,0 +1,27 @@
+### Create a user POST
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+  "title": "My first BLOG Post",
+  "content": "This is the content of my first blog post.",
+  "category": "Technology",
+  "tags": ["tech", "blog"]
+}
+
+### Create another user POST
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+  "title": "My second BLOG Post",
+  "content": "This is the content of my second blog post.",
+  "category": "Technology",
+  "tags": ["programming", "web dev"]
+}
+
+### Get all POSTS
+GET http://localhost:3000/api/posts
+
+### Get a single POST by ID
+GET http://localhost:3000/api/posts/1
